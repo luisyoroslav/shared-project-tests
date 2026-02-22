@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ConsoleCanlplus": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

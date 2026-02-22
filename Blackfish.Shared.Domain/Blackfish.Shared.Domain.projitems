@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>833aa9f0-bf62-435b-8fc1-74eeb0829d6d</SharedGUID>
+    <!-- <DefineConstants>$(DefineConstants);HasSubfiles;</DefineConstants> -->
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>
+    </Import_RootNamespace>
+  </PropertyGroup>
+  <!-- <PropertyGroup>
+    <HasSubfiles>$([System.Text.RegularExpressions.Regex]::IsMatch($(DefineConstants), '^(.*;)*HasSubfiles(;.*)*$'))</HasSubfiles>
+  </PropertyGroup> -->
+  <Target Name="BeforeResolveReferencesCustom" BeforeTargets="BeforeResolveReferences">
+    <Message Text="Shared Project File Name = $(MSBuildProjectFile)" Importance="high" />
+    <Message Text="Shared Project Extension = $(MSBuildProjectExtension)" Importance="high" />
+    <Message Text="Shared DefineConstants = $(DefineConstants)" Importance="high" />
+    <Message Text="Shared HasSubfiles = $(HasSubfiles)" Importance="high" />
+    <ItemGroup>
+      <Compile Condition="'$(HasSubfiles)' == 'True'" Include="$(MSBuildThisFileDirectory)Blackfish\Subfiles\Subfile.cs" />
+    </ItemGroup>
+  </Target>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Blackfish\Campaigns\Campaign.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Blackfish\Materials\Material.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Blackfish\Shared\MaterialBranchNode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Blackfish\Studios\Studio.cs" />
+    <!-- <Compile Condition="'$(HasSubfiles)' == 'True'" Include="$(MSBuildThisFileDirectory)Blackfish\Subfiles\Subfile.cs" /> -->
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Blackfish\**\.cs">
+    </None>
+  </ItemGroup>
+  <!-- <ItemGroup Condition="'$(HasSubfiles)' == 'false'">
+    <None Include="$(MSBuildThisFileDirectory)Blackfish\Subfiles\**" />
+  </ItemGroup> -->
+  <!-- <ItemGroup Condition="$([System.Text.RegularExpressions.Regex]::IsMatch($(DefineConstants), '^(.*;)*HasSubfiles(;.*)*$')) == 'false'">
+    <Compile Remove="$(MSBuildThisFileDirectory)Blackfish\Subfiles\**" />
+  </ItemGroup> -->
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Blackfish\Campaigns\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Blackfish\Studios\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Blackfish\Shared\" />
+  </ItemGroup>
+</Project>

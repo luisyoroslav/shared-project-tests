@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ConsoleSony": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

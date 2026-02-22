@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<RootNamespace />
+	</PropertyGroup>
+	<!--<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DefineConstants>$(DefineConstants);Sony;HasSubfiles;</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DefineConstants>$(DefineConstants);Sony;HasSubfiles;</DefineConstants>
+	</PropertyGroup>-->
+	<!--<Target Name="BeforeResolveReferences">
+		<Message Text="&gt;&gt; BeforeResolveReferences target Sony" />
+	</Target>-->
+	<!--<PropertyGroup>
+		<IsTopLevelBuildProject Condition="'$(IsTopLevelBuildProject)' == ''">true</IsTopLevelBuildProject>
+	</PropertyGroup>-->
+	<PropertyGroup>
+		<IsTopLevelBuildProject Condition="'$(IsTopLevelBuildProject)' == ''">true</IsTopLevelBuildProject>
+	</PropertyGroup>
+	
+	<Target Name="BeforeResolveReferencesCustom"
+	        BeforeTargets="BeforeResolveReferences">
+		<PropertyGroup>
+			<DefineConstants>$(DefineConstants);Manolo;HasSubfiles</DefineConstants>
+		</PropertyGroup>
+		<Message Text="Project File Name = $(DefineConstants)" Importance="high"/>
+		<!--<Message Text="Project File Name = $(AdditionalProperties)" Importance="high"/>
+		<Message Text="Project Extension = $(MSBuildProjectExtension)" Importance="high"/>
+		<Message Text="CoreBuildDependsOn = $(DefineConstants)" Importance="high"/>-->
+	</Target>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Blackfish.Sony.Domain\Blackfish.Sony.Domain.csproj" />
+	</ItemGroup>
+</Project>

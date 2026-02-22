@@ -1,0 +1,14 @@
+<Project>
+  <ItemDefinitionGroup>
+    <ProjectReference>
+      <AdditionalProperties>$(AdditionalProperties);GlobalConstants=$(GlobalConstants)</AdditionalProperties>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  
+
+  <!-- <Target Name="AppendGlobalConstants" BeforeTargets="CoreCompile">
+    <PropertyGroup>
+      <DefineConstants>$(DefineConstants);$(GlobalConstants)</DefineConstants>
+    </PropertyGroup>
+  </Target> -->
+</Project>

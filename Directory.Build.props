@@ -1,0 +1,18 @@
+
+<Project>
+  <PropertyGroup>
+    <GlobalConstants Condition="$([System.String]::Copy('$(MSBuildProjectName)').ToLowerInvariant().Contains('sony'))">Sony;HasSubfiles</GlobalConstants>
+    <GlobalConstants Condition="$([System.String]::Copy('$(MSBuildProjectName)').ToLowerInvariant().Contains('studiocloud'))">StudioCloud;HasSubfiles</GlobalConstants>
+    <GlobalConstants Condition="$([System.String]::Copy('$(MSBuildProjectName)').ToLowerInvariant().Contains('canalplus'))">Canalplus</GlobalConstants>
+    <GlobalConstants Condition="$([System.String]::Copy('$(MSBuildProjectName)').ToLowerInvariant().Contains('hawk'))">Hawk</GlobalConstants>
+    <GlobalConstants Condition="$([System.String]::Copy('$(MSBuildProjectName)').ToLowerInvariant().Contains('warner'))">Warner;HasSubfiles</GlobalConstants>
+  </PropertyGroup>
+ 
+  <PropertyGroup>
+    <DefineConstants>$(DefineConstants)$(GlobalConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <HasSubfiles>$([System.Text.RegularExpressions.Regex]::IsMatch($(DefineConstants), '^(.*;)*HasSubfiles(;.*)*$'))</HasSubfiles>
+  </PropertyGroup>
+
+</Project>

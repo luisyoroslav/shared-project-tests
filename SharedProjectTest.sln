@@ -1,0 +1,107 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36915.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSony", "ConsoleSony\ConsoleSony.csproj", "{2BC96E41-35F3-481F-898B-08AFDF2C06E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHawk", "ConsoleHawk\ConsoleHawk.csproj", "{08E01500-E797-49D7-AD7C-98B57082DC23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWarner", "ConsoleWarner\ConsoleWarner.csproj", "{B816791F-5717-4742-AB43-C0F055DC384F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleStudioCloud", "ConsoleStudioCloud\ConsoleStudioCloud.csproj", "{6BCBE56E-D8EA-4E43-BCD3-4ADA01304A09}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Blackfish.Shared.Domain", "Blackfish.Shared.Domain\Blackfish.Shared.Domain.shproj", "{833AA9F0-BF62-435B-8FC1-74EEB0829D6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackfish.Hawk.Domain", "Blackfish.Hawk.Domain\Blackfish.Hawk.Domain.csproj", "{78EF293C-1B85-4083-BEFC-DE84CC9094D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCanalplus", "ConsoleCanalplus\ConsoleCanalplus.csproj", "{4C0431AB-90E1-4792-8D63-0D1564AD8E30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackfish.Warner.Domain", "Blackfish.Warner.Domain\Blackfish.Warner.Domain.csproj", "{47416DBB-065D-4A59-999C-B336C5C0FF80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackfish.Sony.Domain", "Blackfish.Sony.Domain\Blackfish.Sony.Domain.csproj", "{75A60139-8444-4459-9411-03105B297871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackfish.Canalplus.Domain", "Blackfish.Canalplus.Domain\Blackfish.Canalplus.Domain.csproj", "{DA52CFC1-01E1-4D88-9596-A2F0539CAADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackfish.StudioCloud.Domain", "Blackfish.StudioCloud.Domain\Blackfish.StudioCloud.Domain.csproj", "{340BC9A7-3515-4467-890D-5A544AF5BCB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".misc", ".misc", "{F73B641C-02DA-4E0A-8A38-C9D050D08535}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BC96E41-35F3-481F-898B-08AFDF2C06E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BC96E41-35F3-481F-898B-08AFDF2C06E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BC96E41-35F3-481F-898B-08AFDF2C06E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BC96E41-35F3-481F-898B-08AFDF2C06E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08E01500-E797-49D7-AD7C-98B57082DC23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E01500-E797-49D7-AD7C-98B57082DC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E01500-E797-49D7-AD7C-98B57082DC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E01500-E797-49D7-AD7C-98B57082DC23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B816791F-5717-4742-AB43-C0F055DC384F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B816791F-5717-4742-AB43-C0F055DC384F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B816791F-5717-4742-AB43-C0F055DC384F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B816791F-5717-4742-AB43-C0F055DC384F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BCBE56E-D8EA-4E43-BCD3-4ADA01304A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCBE56E-D8EA-4E43-BCD3-4ADA01304A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BCBE56E-D8EA-4E43-BCD3-4ADA01304A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BCBE56E-D8EA-4E43-BCD3-4ADA01304A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78EF293C-1B85-4083-BEFC-DE84CC9094D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78EF293C-1B85-4083-BEFC-DE84CC9094D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78EF293C-1B85-4083-BEFC-DE84CC9094D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78EF293C-1B85-4083-BEFC-DE84CC9094D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0431AB-90E1-4792-8D63-0D1564AD8E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0431AB-90E1-4792-8D63-0D1564AD8E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0431AB-90E1-4792-8D63-0D1564AD8E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0431AB-90E1-4792-8D63-0D1564AD8E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47416DBB-065D-4A59-999C-B336C5C0FF80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47416DBB-065D-4A59-999C-B336C5C0FF80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47416DBB-065D-4A59-999C-B336C5C0FF80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47416DBB-065D-4A59-999C-B336C5C0FF80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75A60139-8444-4459-9411-03105B297871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A60139-8444-4459-9411-03105B297871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A60139-8444-4459-9411-03105B297871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A60139-8444-4459-9411-03105B297871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA52CFC1-01E1-4D88-9596-A2F0539CAADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA52CFC1-01E1-4D88-9596-A2F0539CAADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA52CFC1-01E1-4D88-9596-A2F0539CAADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA52CFC1-01E1-4D88-9596-A2F0539CAADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340BC9A7-3515-4467-890D-5A544AF5BCB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340BC9A7-3515-4467-890D-5A544AF5BCB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340BC9A7-3515-4467-890D-5A544AF5BCB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340BC9A7-3515-4467-890D-5A544AF5BCB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{833AA9F0-BF62-435B-8FC1-74EEB0829D6D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{78EF293C-1B85-4083-BEFC-DE84CC9094D8} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{47416DBB-065D-4A59-999C-B336C5C0FF80} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{75A60139-8444-4459-9411-03105B297871} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{DA52CFC1-01E1-4D88-9596-A2F0539CAADB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{340BC9A7-3515-4467-890D-5A544AF5BCB2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85A5BC2C-CF6D-46BF-B5F1-E26893283D57}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Blackfish.Shared.Domain\Blackfish.Shared.Domain.projitems*{08e01500-e797-49d7-ad7c-98b57082dc23}*SharedItemsImports = 5
+		Blackfish.Shared.Domain\Blackfish.Shared.Domain.projitems*{340bc9a7-3515-4467-890d-5a544af5bcb2}*SharedItemsImports = 5
+		Blackfish.Shared.Domain\Blackfish.Shared.Domain.projitems*{47416dbb-065d-4a59-999c-b336c5c0ff80}*SharedItemsImports = 5
+		Blackfish.Shared.Domain\Blackfish.Shared.Domain.projitems*{4c0431ab-90e1-4792-8d63-0d1564ad8e30}*SharedItemsImports = 5
+		Blackfish.Shared.Domain\Blackfish.Shared.Domain.projitems*{75a60139-8444-4459-9411-03105b297871}*SharedItemsImports = 5
+		Blackfish.Shared.Domain\Blackfish.Shared.Domain.projitems*{78ef293c-1b85-4083-befc-de84cc9094d8}*SharedItemsImports = 5
+		Blackfish.Shared.Domain\Blackfish.Shared.Domain.projitems*{833aa9f0-bf62-435b-8fc1-74eeb0829d6d}*SharedItemsImports = 13
+		Blackfish.Shared.Domain\Blackfish.Shared.Domain.projitems*{da52cfc1-01e1-4d88-9596-a2f0539caadb}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
