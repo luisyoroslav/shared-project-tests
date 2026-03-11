@@ -1,14 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿#region Using
+
 using Blackfish.Materials;
 using Blackfish.Shared;
 
+#endregion
+
 namespace Blackfish.Subfiles;
 
-public partial class Subfile: MaterialBranchNode
+public class Subfile : MaterialBranchNode
 {
-    public Guid? MaterialId { get; set; }
-    public Material? Material { get; set; }
-}
+    #region Properties
 
+    public Material? Material { get; set; }
+    public Guid? MaterialId { get; set; }
+
+    #endregion
+}

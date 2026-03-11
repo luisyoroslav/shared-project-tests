@@ -1,13 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
+﻿#region Using
+
 using System.Collections.ObjectModel;
-using System.Text;
 using Blackfish.Campaigns;
 using Blackfish.Shared;
 
+#endregion
+
 namespace Blackfish.Studios;
 
-public partial class Studio: MaterialBranchNode
+public class Studio : MaterialBranchNode
 {
+    #region Properties
+
     public ICollection<Campaign> Campaigns { get; set; } = new ReadOnlyCollection<Campaign>(new List<Campaign>());
+
+    #endregion
 }
