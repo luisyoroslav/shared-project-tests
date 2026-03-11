@@ -9,4 +9,8 @@
 
   <Import Project="..\Blackfish.Shared.Domain\Blackfish.Shared.Domain.projitems" Label="Shared" />
 
+  <ItemGroup>
+    <None Remove="Blackfish\Campaigns\Campaign.cs" />
+  </ItemGroup>
+
 </Project>

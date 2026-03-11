@@ -7,6 +7,7 @@ internal class Program
         
         //var subfile = new Blackfish.Subfiles.Subfile();
         
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("Hello, World! (Hawk)");
+        Console.ReadLine();
     }
 }

@@ -7,6 +7,7 @@ internal class Program
     static void Main(string[] args)
     {
         var subfile = new Subfile();
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine("Hello, World! (Sony)");
+        Console.ReadLine();
     }
 }

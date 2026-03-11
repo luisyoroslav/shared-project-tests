@@ -6,7 +6,6 @@ using Blackfish.Shared;
 
 namespace Blackfish.Subfiles;
 
-
 public partial class Subfile: MaterialBranchNode
 {
     public Guid? MaterialId { get; set; }
